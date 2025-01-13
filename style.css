@@ -32,11 +32,11 @@ a {
 }
 .top_content-title {
   font-size: 64px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 .top_content-title2 {
   font-size: 24px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .top_content-button {
   width: 247px;
@@ -48,4 +48,74 @@ a {
   color: #FFFFFF;
   background-color: #202027;
   font-family: inherit;
+  text-align: center;
+  display: inline-block;
+  padding: 16px 28px 16px 28px;
+}
+.top_content-button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
+.mini-games {
+  background-color: #202027;
+  background-image: url("img/Star_1.png"), url("img/Star_11.png"), url("img/Star_12.png");
+  background-repeat: no-repeat;
+  background-position: top 77px left 933px, top 770px left 25px, top 822px left 40px;
+  height: 1470px;
+}
+.mini-games_content {
+  padding: 94px 120px 72px 119px;
+}
+.mini-games_content-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.mini-games_content-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.mini-games-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0px 120px 0px 119px;
+}
+.mini-games-card_link {
+  display: inline-block;
+}
+.mini-games-card_item {
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
+  transition: transform 0.3s ease;
+}
+.mini-games-card_item:hover {
+  transform: scale(1.1);
+}
+.mini-games-card_item_img {
+  width: 378px;
+}
+.mini-games-card_item_description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 32px 36px 32px;
+}
+.mini-games-card_item_title {
+  font-size: 32px;
+  font-weight: 500;
+}
+.mini-games-card_item_span {
+  border-radius: 52px;
+  background-color: #F7F7F7;
+  width: 108px;
+  height: 36px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px 10px 16px;
 }/*# sourceMappingURL=style.css.map */
