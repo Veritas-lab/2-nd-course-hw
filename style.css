@@ -62,7 +62,7 @@ a {
   background-color: #202027;
   background-image: url("img/Star_1.png"), url("img/Star_11.png"), url("img/Star_12.png");
   background-repeat: no-repeat;
-  background-position: top 77px left 933px, top 770px left 25px, top 822px left 40px;
+  background-position: top 77px right 0px, top 770px left 25px, top 822px left 40px;
   height: 1470px;
 }
 
