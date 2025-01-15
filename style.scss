@@ -23,49 +23,50 @@ a {
     background-image: url('img/Group_star.png'), url('img/Star_2.png'), url('img/Star_3.png'), url('img/Star_4.png'), url('img/Star_5.png');
     background-repeat: no-repeat;
     background-position:
-        top -13px left 854px,
+        top 0px right 0px,
         top 94px left 63px,
         top 69px left 156px,
         top 568px left 1013px,
         top 538px left 948px;
+}
 
-    &_content {
-        display: flex;
-        padding: 196px 551px 246px 120px;
-        gap: 48px;
-        flex-wrap: wrap;
+.content {
+    display: flex;
+    padding: 196px 551px 246px 120px;
+    gap: 48px;
+    flex-wrap: wrap;
 
-        &-title {
-            font-size: 64px;
-            font-weight: 700;
-        }
+    &-title {
+        font-size: 64px;
+        font-weight: 700;
+    }
 
-        &-title2 {
-            font-size: 24px;
-            font-weight: 400;
-        }
+    &-title2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
 
-        &-button {
-            width: 247px;
-            height: 66px;
-            border-radius: 60px;
-            border: 1px solid #202027;
-            font-size: 24px;
-            font-weight: 600;
-            color: #FFFFFF;
-            background-color: #202027;
-            font-family: inherit;
-            text-align: center;
-            display: inline-block;
-            padding: 16px 28px 16px 28px;
+    &-button {
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        border: 1px solid #202027;
+        font-size: 24px;
+        font-weight: 600;
+        color: #FFFFFF;
+        background-color: #202027;
+        text-align: center;
+        display: inline-block;
+        padding: 16px 28px 16px 28px;
+        cursor: pointer;
 
-            &:hover {
-                background-color: #FFFFFF;
-                color: #202027;
-            }
+        &:hover {
+            background-color: #FFFFFF;
+            color: #202027;
         }
     }
 }
+
 
 .mini-games {
     background-color: #202027;
@@ -76,70 +77,82 @@ a {
         top 770px left 25px,
         top 822px left 40px;
     height: 1470px;
+}
 
-    &_content {
-        padding: 94px 120px 72px 119px;
+.about-games {
+    padding: 94px 120px 72px 119px;
 
-        &-title {
-            font-size: 64px;
-            font-weight: 700;
-            color: #FFFFFF;
-            margin-bottom: 24px;
+    &_title {
+        font-size: 64px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+
+    &_text {
+        font-size: 24px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+}
+
+.mini-games-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 0px 120px 50px 119px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 378px;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.10);
+    }
+
+    &_link {
+        display: inline-block;
+
+        &-img {
+            width: 100%;
         }
 
-        &-text {
-            font-size: 24px;
-            font-weight: 400;
-            color: #FFFFFF;
+        &-about {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 32px 32px 36px 32px;
+        }
+
+        &-span {
+            border-radius: 52px;
+            background-color: #F7F7F7;
+            width: 108px;
+            height: 36px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 16px 10px 16px;
+            color: #202027;
+        }
+
+        &-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #202027;
         }
     }
 
-    &-card {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-        padding: 0px 120px 0px 119px;
-
-        &_link {
-            display: inline-block;
-        }
-
-        &_item {
-            border-radius: 30px;
-            background-color: #FFFFFF;
-            box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
-            transition: transform 0.3s ease;
-
-            &:hover {
-                transform: scale(1.10);
-            }
-
-            &_img {
-                width: 378px;
-            }
-
-            &_description {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                padding: 32px 32px 36px 32px;
-            }
-
-            &_title {
-                font-size: 32px;
-                font-weight: 500;
-            }
-
-            &_span {
-                border-radius: 52px;
-                background-color: #F7F7F7;
-                width: 108px;
-                height: 36px;
-                display: inline-block;
-                font-size: 16px;
-                font-weight: 500;
-                padding: 8px 16px 10px 16px;
-            }
-        }
+    &:nth-child(4),
+    &:nth-child(6) {
+        margin-top: -32px;
     }
 }
