@@ -25,21 +25,21 @@ a {
   background-position: top 0px right 0px, top 94px left 63px, top 69px left 156px, top 568px left 1013px, top 538px left 948px;
 }
 
-.content {
+.header {
   display: flex;
   padding: 196px 551px 246px 120px;
   gap: 48px;
   flex-wrap: wrap;
 }
-.content-title {
+.header__title {
   font-size: 64px;
   font-weight: 700;
 }
-.content-title2 {
+.header__subtitle {
   font-size: 24px;
   font-weight: 400;
 }
-.content-button {
+.header__button {
   width: 247px;
   height: 66px;
   border-radius: 60px;
@@ -53,7 +53,7 @@ a {
   padding: 16px 28px 16px 28px;
   cursor: pointer;
 }
-.content-button:hover {
+.header__button:hover {
   background-color: #FFFFFF;
   color: #202027;
 }
@@ -66,24 +66,25 @@ a {
   height: 1470px;
 }
 
-.about-games {
+.about {
   padding: 94px 120px 72px 119px;
 }
-.about-games_title {
+.about__title {
   font-size: 64px;
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 24px;
 }
-.about-games_text {
+.about__text {
   font-size: 24px;
   font-weight: 400;
   color: #FFFFFF;
 }
 
-.mini-games-link {
+.games {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 32px;
   padding: 0px 120px 50px 119px;
 }
@@ -91,30 +92,30 @@ a {
 .card {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 378px;
   height: 100%;
   border-radius: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
   transition: transform 0.3s ease;
+  margin-bottom: -32px;
 }
 .card:hover {
   transform: scale(1.1);
 }
-.card_link {
+.card__link {
   display: inline-block;
 }
-.card_link-img {
-  width: 100%;
+.card__img {
+  max-width: 100%;
 }
-.card_link-about {
+.card__info {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 32px 32px 36px 32px;
 }
-.card_link-span {
+.card__number {
   border-radius: 52px;
   background-color: #F7F7F7;
   width: 108px;
@@ -125,11 +126,11 @@ a {
   padding: 8px 16px 10px 16px;
   color: #202027;
 }
-.card_link-title {
+.card__title {
   font-size: 32px;
   font-weight: 700;
   color: #202027;
 }
-.card:nth-child(4), .card:nth-child(6) {
-  margin-top: -32px;
+.card:nth-child(5) {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

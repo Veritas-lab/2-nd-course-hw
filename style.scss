@@ -30,23 +30,23 @@ a {
         top 538px left 948px;
 }
 
-.content {
+.header {
     display: flex;
     padding: 196px 551px 246px 120px;
     gap: 48px;
     flex-wrap: wrap;
 
-    &-title {
+    &__title {
         font-size: 64px;
         font-weight: 700;
     }
 
-    &-title2 {
+    &__subtitle {
         font-size: 24px;
         font-weight: 400;
     }
 
-    &-button {
+    &__button {
         width: 247px;
         height: 66px;
         border-radius: 60px;
@@ -79,26 +79,27 @@ a {
     height: 1470px;
 }
 
-.about-games {
+.about {
     padding: 94px 120px 72px 119px;
 
-    &_title {
+    &__title {
         font-size: 64px;
         font-weight: 700;
         color: #FFFFFF;
         margin-bottom: 24px;
     }
 
-    &_text {
+    &__text {
         font-size: 24px;
         font-weight: 400;
         color: #FFFFFF;
     }
 }
 
-.mini-games-link {
+.games {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 32px;
     padding: 0px 120px 50px 119px;
 }
@@ -106,53 +107,52 @@ a {
 .card {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 378px;
     height: 100%;
     border-radius: 30px;
     background-color: #FFFFFF;
     box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
     transition: transform 0.3s ease;
+    margin-bottom: -32px;
 
     &:hover {
         transform: scale(1.10);
     }
 
-    &_link {
+    &__link {
         display: inline-block;
-
-        &-img {
-            width: 100%;
-        }
-
-        &-about {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            padding: 32px 32px 36px 32px;
-        }
-
-        &-span {
-            border-radius: 52px;
-            background-color: #F7F7F7;
-            width: 108px;
-            height: 36px;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: 500;
-            padding: 8px 16px 10px 16px;
-            color: #202027;
-        }
-
-        &-title {
-            font-size: 32px;
-            font-weight: 700;
-            color: #202027;
-        }
     }
 
-    &:nth-child(4),
-    &:nth-child(6) {
-        margin-top: -32px;
+    &__img {
+        max-width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 32px 36px 32px;
+    }
+
+    &__number {
+        border-radius: 52px;
+        background-color: #F7F7F7;
+        width: 108px;
+        height: 36px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 16px 10px 16px;
+        color: #202027;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #202027;
+    }
+
+    &:nth-child(5) {
+        margin-top: 40px;
     }
 }
