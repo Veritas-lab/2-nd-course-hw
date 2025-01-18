@@ -37,3 +37,6 @@ const user = {
     age: 33,
     isAdmin: false
 };
+let userName;
+userName = prompt("Как вас зовут?");
+alert("Привет, " + userName + "!");
