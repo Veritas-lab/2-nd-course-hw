@@ -67,7 +67,6 @@ a {
     }
 }
 
-
 .mini-games {
     background-color: #202027;
     background-image: url('img/Star_1.png'), url('img/Star_11.png'), url('img/Star_12.png');
@@ -76,7 +75,7 @@ a {
         top 77px right 0px,
         top 770px left 25px,
         top 822px left 40px;
-    height: 1470px;
+        height: 1470px;
 }
 
 .about {
@@ -154,6 +153,20 @@ a {
 
     &:nth-child(5) {
         margin-top: 40px;
+    }
+}
+
+.footer {
+    height: 150px;
+    background-color: #BDED35;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600px;
+        color: #000000;
+        text-align: center;
+        padding-top: 61px;
+        padding-bottom: 60px;
     }
 }
 

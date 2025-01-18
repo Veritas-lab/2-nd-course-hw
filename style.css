@@ -135,6 +135,19 @@ a {
   margin-top: 40px;
 }
 
+.footer {
+  height: 150px;
+  background-color: #BDED35;
+}
+.footer__title {
+  font-size: 24px;
+  font-weight: 600px;
+  color: #000000;
+  text-align: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 17px;
