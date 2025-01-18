@@ -1,11 +1,11 @@
 let a = 10;
-alert (a);
+alert(a);
 a = 20;
-alert (a);
+alert(a);
 const release_year_of_the_first_iphone = 2007;
-alert (release_year_of_the_first_iphone);
+alert(release_year_of_the_first_iphone);
 const name_of_the_creator_java_script_language = "Brendan Eich";
-alert (name_of_the_creator_java_script_language);
+alert(name_of_the_creator_java_script_language);
 let num1 = 10;
 let num2 = 2;
 let sum = num1 + num2;
@@ -17,7 +17,7 @@ alert("Разность: " + difference);
 alert("Произведение: " + product);
 alert("Частное: " + quotient);
 const result = Math.pow(2, 5);
-alert (result);
+alert(result);
 let a1 = 9;
 let b = 2;
 let remainder = a1 % b;
@@ -30,3 +30,10 @@ num /= 3;
 num++;
 num--;
 alert(num);
+let age = promt("Сколько вам лет?");
+alert("Вам " + age + " лет.");
+const user = {
+    name: "Иванов Иван Иванович",
+    age: 33,
+    isAdmin: false
+};
