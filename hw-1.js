@@ -18,3 +18,7 @@ alert("Произведение: " + product);
 alert("Частное: " + quotient);
 const result = Math.pow(2, 5);
 alert (result);
+let a1 = 9;
+let b = 2;
+let remainder = a1 % b;
+alert(remainder);
