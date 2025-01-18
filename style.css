@@ -135,6 +135,73 @@ a {
   margin-top: 40px;
 }
 
+.play {
+  background-color: #202027;
+  padding: 46px 121px 144px 119px;
+  background-image: url("img/Star_6.png"), url("img/Star_7.png"), url("img/Star_8.png"), url("img/Star_10.png");
+  background-repeat: no-repeat;
+  background-position: top 126px left 1326px, top 93px left 1281px, top 3366px right 52px, top 3414px right 150px;
+}
+.play__title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.play-games {
+  margin-top: 72px;
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
+  width: 1200px;
+  height: 500px;
+}
+.game:nth-child(odd) {
+  flex-direction: row;
+}
+.game:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.game__info {
+  flex: 1;
+  margin: 48px 48px 203px 48px;
+}
+.game__title {
+  color: #202027;
+  font-size: 48px;
+  font-weight: 700;
+}
+.game__text {
+  color: #202027;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.game__button {
+  margin-top: 36px;
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background: #202027;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.game__button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+.game__img {
+  max-width: 600px;
+  height: auto;
+}
+
 .footer {
   height: 150px;
   background-color: #BDED35;
@@ -178,16 +245,54 @@ a {
     height: 60px;
     font-size: 16px;
   }
-  .about {
+  .mini-games {
     display: none;
   }
-  .games {
-    gap: 24px;
+  .play {
+    background-color: #202027;
     padding: 48px 16px 0px 16px;
-    align-items: center;
+    background-image: none;
   }
-  .card {
+  .play__title {
+    font-size: 40px;
+  }
+  .play-games {
+    margin-top: 72px;
+  }
+  .game {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
     width: 343px;
-    margin-bottom: 0px;
+    height: 528px;
+  }
+  .game__info {
+    flex: 1;
+    margin: 48px 48px 203px 48px;
+  }
+  .game__title {
+    font-size: 32px;
+  }
+  .game__text {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  .game__button {
+    margin-top: 32px;
+    width: 285px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .game__img {
+    max-width: 343px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__title {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
