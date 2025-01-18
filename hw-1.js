@@ -16,3 +16,5 @@ alert("Сумма: " + sum);
 alert("Разность: " + difference);
 alert("Произведение: " + product);
 alert("Частное: " + quotient);
+const result = Math.pow(2, 5);
+alert (result);
