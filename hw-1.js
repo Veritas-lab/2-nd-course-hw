@@ -37,15 +37,13 @@ num++;
 num--;
 alert(num);
 
-let age = promt("Сколько вам лет?");
-alert("Вам " + age + " лет.");
+let age = prompt("Сколько вам лет?");
+alert("Ваш возраст: " + age);
 
-{
-user = {
+const user = {
     name: "Иванов Иван Иванович",
     age: 33,
     isAdmin: false
-}
 };
 
 let userName;
