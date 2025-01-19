@@ -49,3 +49,10 @@ const user = {
 let userName;
 userName = prompt("Как вас зовут?");
 alert("Привет, " + userName + "!");
+
+let password = 'пароль';
+if (userInput === password) {
+    console.log('Пароль введен верно');
+} else {
+    console.log ('Пароль введен неправильно')
+}
