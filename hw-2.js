@@ -108,7 +108,22 @@ else {
         default:
             console.log("Некорректный номер месяца.");
     }
+};  
+
+let userEnter = prompt('Пожалуйста введите любое число');
+let number = parseFloat(userInput);
+if (!NaN(number)) {
+    if (number % 2 === 0) {
+        alert("Число" + number + "четное");
+    } else {
+        alert("Число" + number + "нечетное");
+    }
+    
+} else {
+    alert("Вы ввели не число. Пожалуйста введите любое число")
 };
+
+
 
 
 
