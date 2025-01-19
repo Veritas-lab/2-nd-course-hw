@@ -51,8 +51,21 @@ userName = prompt("Как вас зовут?");
 alert("Привет, " + userName + "!");
 
 let password = 'пароль';
+let userInput = prompt('Введите пароль');
 if (userInput === password) {
     console.log('Пароль введен верно');
 } else {
     console.log ('Пароль введен неправильно')
-}
+};
+
+let c = 2;
+if (c > 0 && c < 10) {
+    console.log("Верно");
+} else {
+    console.log("Неверно");
+};
+
+
+
+
+
