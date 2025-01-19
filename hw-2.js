@@ -80,7 +80,6 @@ let g = '3';
 alert(Number(a) + Number(b));
 
 let monthNumber = 12;
-
 if (monthNumber < 1 || monthNumber > 12) {
     console.log("Номер месяца должен быть от 1 до 12.");
 } 
@@ -110,6 +109,8 @@ else {
             console.log("Некорректный номер месяца.");
     }
 };
+
+
 
 
 
