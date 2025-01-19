@@ -131,6 +131,18 @@ if (clientOS === 0) {
     console.log("Неизвестная операционная система");
 }
 
+function checkDeviceCompatibility(os, clientDeviceYear) {
+const currentYear = new Date().getFullYear();
+if (clientDeviceYear >= 2015 && clientDeviceYear <= currentYear) {
+    console.log(`Установите приложение для ${os} по ссылке.`);
+} else if (clientDeviceYear < 2015) {
+    console.log(`Установите облегченную версию приложения для ${os} по ссылке.`);
+} else {
+    console.log("Некорректный год выпуска устройства.");
+}
+}
+
+
 
 
 
