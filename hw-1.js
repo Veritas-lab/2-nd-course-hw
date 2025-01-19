@@ -45,9 +45,9 @@ const user = {
     age: 33,
     isAdmin: false
 }
-alert('Имя: ${user.name}, Возраст: ${user.age}');
+alert(`Имя: ${user.name}, Возраст: ${user.age}`);
 
 let userName;
 userName = prompt("Как вас зовут?");
-alert('Привет, ${userName}!');
+alert(`Привет, ${userName}!`);
 
