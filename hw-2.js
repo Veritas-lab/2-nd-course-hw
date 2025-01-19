@@ -77,7 +77,7 @@ else {
 
 let f = '2';
 let g = '3';
-alert(Number(a) + Number(b));
+alert(Number(a) + Number(b))
 
 let monthNumber = 12;
 if (monthNumber < 1 || monthNumber > 12) {
@@ -108,7 +108,7 @@ else {
         default:
             console.log("Некорректный номер месяца.");
     }
-};  
+}
 
 let userEnter = prompt('Пожалуйста введите любое число');
 let number = parseFloat(userEnter);
@@ -120,7 +120,7 @@ if (!isNaN(number)) {
     } 
 } else {
     alert("Вы ввели не число. Пожалуйста введите любое число");
-};
+}
 
 let clientOS = 0;
 if (clientOS === 0) {
@@ -129,7 +129,11 @@ if (clientOS === 0) {
     console.log("Установите версию приложения для Android по ссылке");
 } else {
     console.log("Неизвестная операционная система");
-};
+}
+
+
+
+
 
 
 
