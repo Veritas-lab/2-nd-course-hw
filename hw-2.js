@@ -111,14 +111,13 @@ else {
 };  
 
 let userEnter = prompt('Пожалуйста введите любое число');
-let number = parseFloat(userInput);
+let number = parseFloat(userEnter);
 if (!isNaN(number)) {
     if (number % 2 === 0) {
         alert("Число" + number + "четное");
     } else {
         alert("Число" + number + "нечетное");
-    }
-    
+    } 
 } else {
     alert("Вы ввели не число. Пожалуйста введите любое число")
 };
