@@ -112,7 +112,7 @@ else {
 
 let userEnter = prompt('Пожалуйста введите любое число');
 let number = parseFloat(userInput);
-if (!NaN(number)) {
+if (!isNaN(number)) {
     if (number % 2 === 0) {
         alert("Число" + number + "четное");
     } else {
