@@ -13,8 +13,8 @@ a {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+  padding-left: calc(50% - 723px);
+  padding-right: calc(50% - 723px);
 }
 
 .top {
@@ -27,10 +27,10 @@ a {
 
 .header {
   display: flex;
-  justify-content: center;
-  padding: 196px 551px 246px 120px;
+  flex-direction: column;
+  padding-top: 196px;
+  padding-left: 120px;
   gap: 48px;
-  flex-wrap: wrap;
 }
 .header__title {
   font-size: 64px;
@@ -68,7 +68,9 @@ a {
 }
 
 .about {
-  padding: 94px 120px 72px 119px;
+  padding-top: 94px;
+  padding-left: 119px;
+  padding-bottom: 72px;
 }
 .about__title {
   font-size: 64px;
@@ -86,29 +88,30 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 32px;
-  padding: 0px 120px 50px 119px;
+  padding-left: 119px;
+  padding-bottom: 50px;
+  padding-right: 120px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 378px;
+  width: calc(34% - 32px);
   height: 100%;
   border-radius: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
   transition: transform 0.3s ease;
-  margin-bottom: -32px;
 }
 .card:hover {
   transform: scale(1.1);
 }
 .card__link {
-  display: inline-block;
+  display: block;
 }
 .card__img {
   max-width: 100%;
+  height: auto;
 }
 .card__info {
   display: flex;
@@ -138,7 +141,9 @@ a {
 
 .play {
   background-color: #202027;
-  padding: 46px 121px 144px 119px;
+  padding-left: 119px;
+  padding-top: 46px;
+  padding-bottom: 144px;
   background-image: url("img/Star_6.png"), url("img/Star_7.png"), url("img/Star_8.png"), url("img/Star_10.png");
   background-repeat: no-repeat;
   background-position: top 126px left 1326px, top 93px left 1281px, top 3366px right 52px, top 3414px right 150px;
@@ -209,7 +214,7 @@ a {
 }
 .footer__title {
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   color: #000000;
   text-align: center;
   padding-top: 61px;
@@ -245,6 +250,9 @@ a {
     width: 285px;
     height: 60px;
     font-size: 16px;
+  }
+  .header {
+    justify-content: center;
   }
   .mini-games {
     display: none;
