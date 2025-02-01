@@ -41,3 +41,11 @@ while (n >= 50) {
 }
 console.log("Результат деления:", n);
 console.log("Количество итераций:", num);
+
+const firstFriday = 7;
+let reportFriday = firstFriday;
+while (reportFriday <= 31) {
+    console.log(`Сегодня пятница, ${reportFriday}-е число. Необходимо подготовить отчет.`);
+    reportFriday += 7;
+}
+
