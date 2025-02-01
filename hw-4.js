@@ -33,3 +33,11 @@ for (let name in obj) {
     console.log(`${name} ${obj[name]}`);
 }
 
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+    n = n / 2;
+    num++;
+}
+console.log("Результат деления:", n);
+console.log("Количество итераций:", num);
