@@ -24,4 +24,12 @@ for (let l = 7; l <= 22; l++) {
     console.log(l);
 }
 
+const obj = {
+    "Коля" : '200',
+    "Вася" : '300',
+    "Петя" : '400'
+};
+for (let name in obj) {
+    console.log(`${name} ${obj[name]}`);
+}
 
