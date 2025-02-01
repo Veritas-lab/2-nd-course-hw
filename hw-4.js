@@ -73,4 +73,12 @@ for (let key in book) {
     console.log(`${key}: ${book[key]}`);
 }
 
+const randomNumber = [];
+for (let z = 0; z < 10; z++) {
+    randomNumber.push(Math.floor(Math.random() * 100) + 1);
+}
+console.log("массив:", randomNumber);
+const minNumber = Math.min(...randomNumber);
+console.log("Минимальное число в массиве:", minNumber);
+
 
