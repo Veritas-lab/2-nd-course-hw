@@ -8,10 +8,10 @@ for (let i = 0; i < 2; i++) {
     console.log("Привет");
 }
 
-let k = 1;
-while (k <= 5) {
-    console.log(k);
-    k++;
+let a = 1;
+while (a <= 5) {
+    console.log(a);
+    a++;
 }
 
 let l = 7;
@@ -48,4 +48,14 @@ while (reportFriday <= 31) {
     console.log(`Сегодня пятница, ${reportFriday}-е число. Необходимо подготовить отчет.`);
     reportFriday += 7;
 }
+
+let k = 100;
+let iterations = 0;
+while (k >= 0) {
+    k-=7;
+    iterations++;
+}
+console.log("Результат после вычитания:", k);
+console.log("Количество итераций:", iterations);
+
 
