@@ -13,3 +13,15 @@ while (k <= 5) {
     console.log(k);
     k++;
 }
+
+let l = 7;
+while (l <= 22) {
+    console.log(l);
+    l++;
+}
+
+for (let l = 7; l <= 22; l++) {
+    console.log(l);
+}
+
+
