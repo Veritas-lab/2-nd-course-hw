@@ -63,3 +63,14 @@ months.forEach((month, index) => {
     console.log(`${index + 1}: ${month}`);
 });
 
+const book = {
+    title: "Зов Ктулху",
+    author: "Лавкрафт, Говард Филлипс",
+    year: "1928",
+    genre: "Ужасы"
+};
+for (let key in book) {
+    console.log(`${key}: ${book[key]}`);
+}
+
+
