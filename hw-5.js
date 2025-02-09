@@ -97,4 +97,30 @@ function getNumber() {
 }
 console.log(getNumber());
 
+//Задание 7
+//Создайте два объекта, circle1 и circle2, каждый из которых имеет свойство radius.
+//Оба объекта должны иметь:
+//1. Метод getArea, который возвращает площадь круга, вычисляемую через радиус.
+//2. Метод getPerimeter, который возвращает периметр окружности.
 
+function getArea() {
+    return Math.PI * this.radius ** 2;
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 10,
+    methodgetArea: getArea,
+    methodgetPerimetr: getPerimeter,
+}
+
+const circle2 = {
+    radius: 10,
+    methodgetArea: getArea,
+    methodgetPerimetr: getPerimeter,
+}
+console.log(circle1.methodgetArea());
+console.log(circle2.methodgetArea());
