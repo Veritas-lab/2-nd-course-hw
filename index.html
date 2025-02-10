@@ -96,8 +96,8 @@
                     <p class="game__text">Попробуй угадать случайное<br> число от 1 до 100.</p>
                     <button class="game__button" onclick="guessNumber();">Играть!</button>
                     <script>
-                        const randomNumber = Math.floor(Math.random() * 100) + 1;
                         function guessNumber() {
+                            const randomNumber = Math.floor(Math.random() * 100) + 1;
                             console.log("Загаданное число:", randomNumber);
                             let guess;
                             let attempts = 0;
