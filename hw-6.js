@@ -125,3 +125,7 @@ console.log(getlength(['hello', 'Veritas']));
 //Задание 13
 //Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив, содержащий только отрицательные значения.
 
+function negativeNumbers(array) {
+    return array.filter(item => item < 0);
+}
+console.log(negativeNumbers([1, 2, 3, -4, -5, -6, 7, 8, 9, 10]));
