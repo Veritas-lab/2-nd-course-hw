@@ -80,3 +80,17 @@ console.log(line);
 line.reverse();
 line = line.join('');
 console.log(line);
+
+//Задание 9
+//Дан массив: [[1, 2, 3],[4, 5, 6]]. Выведите в консоль массив вида: [1, 2, 3, 4, 5, 6].
+
+const dimens = [[1, 2, 3], [4, 5, 6]];
+const newDimens = [];
+for (let i = 0; i < dimens.length; i++) {
+    newDimens.push(...dimens[i]);
+}
+console.log(newDimens);
+
+const flat = [[1, 2, 3], [4, 5, 6]];
+console.log(flat.flat());
+
