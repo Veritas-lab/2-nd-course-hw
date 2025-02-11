@@ -50,3 +50,10 @@ console.log(aru);
 const ari = [1, 1, 1];
 ari.push(2, 2, 2);
 console.log(ari);
+
+//Задание 6
+//Дан массив: [9, 8, 7, 'a', 6, 5]. С помощью метода sort отсортируйте массив и удалите букву 'a' из массива. Затем выведите массив.
+
+const sorty = [9, 8, 7, 'a', 6, 5];
+sorty.sort();
+console.log(sorty);
