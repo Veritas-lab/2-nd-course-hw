@@ -105,3 +105,12 @@ for (let i = 0; i < random.length; i++) {
     console.log(random[i] + random[i + 1]);
 }
 }
+
+//Задание 11
+//Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
+
+function square(sqr) {
+    return sqr.map(item => item ** 2);
+}
+console.log(square([1, 2, 3]));
+
