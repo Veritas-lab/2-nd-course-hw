@@ -155,3 +155,17 @@ for (let i = 0; i < sporadic.length; i++) {
 
 console.log(evenSporadic);
 
+//Задание 15
+//Создайте массив, состоящий из 6 элементов. Элементы массива необходимо сгенерировать с помощью Math.random() в диапазоне от 1 до 10.
+//Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
+
+function randomNumb() {
+    return Math.floor(Math.random() * 10);
+}
+
+const odd = [];
+for (let i = 0; i < 10; i++) {
+    odd.push(randomNumb());
+}
+console.log(odd);
+console.log(odd.reduce((a, b) => a + b) / odd.length);
