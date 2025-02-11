@@ -30,3 +30,16 @@ for (let i = 0; i < arr.length; i++) {
 
 const ary = [1, 3, 5, 10, 20];
 console.log(ary.join(' '));
+
+//Задание 4
+//С помощью вложенных циклов создайте многомерный массив вида: [[1, 1, 1], [1, 1, 1], [1, 1, 1]].
+
+const aru = [];
+for (let i = 0; i < 3; i++) {
+    const aru2 = [];
+    for (let i = 0; i < 3; i++) {
+        aru2.push(1);
+    }
+    aru.push(aru2);
+}
+console.log(aru);
