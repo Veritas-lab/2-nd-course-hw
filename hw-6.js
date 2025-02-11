@@ -129,3 +129,29 @@ function negativeNumbers(array) {
     return array.filter(item => item < 0);
 }
 console.log(negativeNumbers([1, 2, 3, -4, -5, -6, 7, 8, 9, 10]));
+
+//Задание 14
+//Создайте массив, состоящий из 10 значений. Значения массива необходимо сгенерировать с помощью метода Math.random()
+//в диапазоне от 0 до 10. В данном массиве найдите все четные значения и добавьте их в новый массив. 
+//Результат работы программы необходимо вывести в консоль — это будут два массива: исходный массив и массив с четными значениями.
+
+function sporadicNumber() {
+return Math.floor(Math.random() * 10);
+}
+const sporadic = [];
+for (let i = 0; i < 10; i++) {
+    sporadic.push(sporadicNumber());
+}
+
+console.log(sporadic);
+
+const evenSporadic = [];
+
+for (let i = 0; i < sporadic.length; i++) {
+    if (sporadic[i] % 2 === 0) {
+        evenSporadic.push(sporadic[i]);
+    }
+}
+
+console.log(evenSporadic);
+
