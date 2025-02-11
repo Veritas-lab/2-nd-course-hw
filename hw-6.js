@@ -70,3 +70,13 @@ if (aur.includes(userNumber)) {
 } else {
     alert('Не угадал');
 }
+
+//Задание 8
+//Дана строка: 'abcdef'. Выведите в консоль 'fedcba'.
+
+let line = 'abcdef';
+line = line.split('');
+console.log(line);
+line.reverse();
+line = line.join('');
+console.log(line);
