@@ -43,3 +43,10 @@ for (let i = 0; i < 3; i++) {
     aru.push(aru2);
 }
 console.log(aru);
+
+//Задание 5
+//Дан массив: [1, 1, 1]. Добавьте в конец массива значения 2, 2, 2.
+
+const ari = [1, 1, 1];
+ari.push(2, 2, 2);
+console.log(ari);
