@@ -95,38 +95,6 @@
                     <h3 class="game__title">Угадай число</h3>
                     <p class="game__text">Попробуй угадать случайное<br> число от 1 до 100.</p>
                     <button class="game__button" onclick="guessNumber();">Играть!</button>
-                    <script>
-                        function guessNumber() {
-                            const randomNumber = Math.floor(Math.random() * 100) + 1;
-                            console.log("Загаданное число:", randomNumber);
-                            let guess;
-                            let attempts = 0;
-                            while (true) {
-                                guess = prompt("Угадай число от 1 до 100 :) (Для выхода введите 'выход' или 0)");
-                                if (guess === "выход" || guess === "0") {
-                                alert("Игра завершена. Приходи еще!");
-                                break;
-                                }
-                                guess = parseInt(guess);
-                                if (isNaN(guess)) {
-                                    alert("Введи число и поймай удачу за хвост!");
-                                    continue;
-                                }
-                                attempts++;
-                                
-                                if (guess < randomNumber) {
-                                    alert("Не угадал. Загаданное число больше. Не отчаивайся, попробуй еще раз!");
-                                }
-                                else if (guess > randomNumber) {
-                                    alert("Не угадал. Загаданное число меньше. Не отчаивайся, попробуй еще раз!");
-                                }
-                                else {
-                                    alert(`Ура! Ты супер! Угадал число с ${attempts} раза.`);
-                                    break;
-                                }
-                            }
-                        }
-                    </script>
                 </div>
                 <img class="game__img" src="img/game_1.png" alt="Угадай число">
             </article>
@@ -135,9 +103,6 @@
                     <h3 class="game__title">Простая<br>арифметика</h3>
                     <p class="game__text">Попробуй решить простые арифметические задачи.</p>
                     <button class="game__button" onclick="();">Играть!</button>
-                    <script>
-
-                    </script>
                 </div>
                 <img class="game__img" src="img/game_2.png" alt="Простая арифметика">
             </article>
