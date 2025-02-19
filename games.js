@@ -100,7 +100,7 @@ function simpleQuiz() {
         }
     ];
 
-    let correctCount = 0; 
+    let trueCount = 0; 
     for (let i = 0; i < quiz.length; i++) {
         const currentQuestion = quiz[i];
 
@@ -108,10 +108,10 @@ function simpleQuiz() {
 
         const userAnswer = parseInt(prompt(questionText), 10);
 
-        if (userAnswer === currentQuestion.correctAnswer) {
-            correctCount++; // Увеличиваем счетчик правильных ответов
+        if (userAnswer === currentQuestion.trueAnswer) {
+            trueCount++; 
         }
     }
-    alert(`Количество правильных ответов: ${correctCount} из ${quiz.length}`); 
+    alert(`Количество правильных ответов: ${trueCount} из ${quiz.length}`); 
 }
 
