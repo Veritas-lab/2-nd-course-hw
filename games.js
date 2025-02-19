@@ -67,3 +67,15 @@ if (userResponse === correctResponse) {
     alert(`Упс, ошибка. Правильный ответ: ${correctResponse}`);
 }
 }
+
+//Переверни текст
+function reverseText() {
+    let userInput = prompt("Введите текст, который хотите перевернуть:");
+    if (userInput === null || userInput === "") {
+        alert("Вы не ввели текст, попробуйте снова!");
+        return;
+    }
+        let reversedText = userInput.split('').reverse().join('');
+
+        alert("Перевернутый текст: " + reversedText);
+}
