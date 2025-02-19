@@ -51,8 +51,7 @@ function simpleArithmetic() {
         case '*':
         correctResponse = num1 * num2;
         break;
-        case '/':
-        if (num2 === 0) num2 = 1;
+        case '/':   
         correctResponse = num1 / num2;
         break;
     }
@@ -70,12 +69,49 @@ if (userResponse === correctResponse) {
 
 //Переверни текст
 function reverseText() {
-    let userInput = prompt("Введите текст, который хотите перевернуть:");
+    let userInput = prompt("Введи текст, который хочешь перевернуть:");
     if (userInput === null || userInput === "") {
-        alert("Вы не ввели текст, попробуйте снова!");
+        alert("Упс! Ты не ввел текст, попробуй снова!");
         return;
     }
         let reversedText = userInput.split('').reverse().join('');
 
         alert("Перевернутый текст: " + reversedText);
 }
+
+
+//Викторина
+function simpleQuiz() {
+    const quiz = [
+        {
+            question: "Какого цвета небо?",
+            options: ["1. Красного", "2. Синего", "3. Зеленого"],
+            trueAnswer: 2 
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            trueAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            trueAnswer: 2
+        }
+    ];
+
+    let correctCount = 0; 
+    for (let i = 0; i < quiz.length; i++) {
+        const currentQuestion = quiz[i];
+
+        const questionText = `${currentQuestion.question}\n${currentQuestion.options.join("\n")}`;
+
+        const userAnswer = parseInt(prompt(questionText), 10);
+
+        if (userAnswer === currentQuestion.correctAnswer) {
+            correctCount++; // Увеличиваем счетчик правильных ответов
+        }
+    }
+    alert(`Количество правильных ответов: ${correctCount} из ${quiz.length}`); 
+}
+
