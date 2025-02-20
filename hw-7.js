@@ -10,8 +10,8 @@ console.log(str);
 //которые начинаются со второй строки. Регистр символов не влияет на результат.
 
 function filter(arr, str) {
-    const LowerStr = str.toLowerCase();
-    return arr.filter(item => item.toLowerCase().startsWith(LowerStr));
+    const lowerStr = str.toLowerCase();
+    return arr.filter(item => item.toLowerCase().startsWith(lowerStr));
 }
 console.log(filter(['JavaScript', 'Java', 'Python'], 'ja'));
 
