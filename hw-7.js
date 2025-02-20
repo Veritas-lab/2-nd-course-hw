@@ -88,12 +88,12 @@ function formatDate(date) {
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
     const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
     const year = date.getFullYear();
-    const day = date.getDate();
+    const day = String(date.getDate()).padStart(2, '0');
     const month = date.getMonth();
     const dayOfWeek = days[date.getDay()];
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
 
     return `
     Дата : ${day} ${months[month]} ${year} - это ${dayOfWeek}.
