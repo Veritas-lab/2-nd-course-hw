@@ -115,3 +115,27 @@ function simpleQuiz() {
     alert(`Количество правильных ответов: ${trueCount} из ${quiz.length}`); 
 }
 
+//Камень, ножницы, бумага
+
+function rockscissorsPaper() {
+    const choices = ["камень", "ножницы", "бумага"];
+    const userChoice = prompt("Камень, ножницы, бумага?").toLowerCase();
+    if (!choices.includes(userChoice)) {
+        alert("Упс, ты ошибся! Выбери камень, ножницы или бумагу.");
+        return;
+    }
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    alert(`Твой выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}`);
+    if (userChoice === computerChoice) {
+        alert("Ничья!");
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        alert("Ура! Ты победил!");
+    } else {
+        alert("Компьютер победил, не отчаивайся, попробуй еще раз!");
+    }
+}
+
