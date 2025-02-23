@@ -12,6 +12,7 @@
         rel="stylesheet">
 </head>
 <body>
+    <script src="hw-7.js"></script>
     <div class="top center">
         <header class="header">
             <h1 class="header__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
@@ -91,7 +92,7 @@
         <nav class="play-games">
             <article class="game" id="guess_the_number">
                 <div class="game__info">
-                    <h3 class="game__title">Угадай число </h3>
+                    <h3 class="game__title">Угадай число</h3>
                     <p class="game__text">Попробуй угадать случайное<br> число от 1 до 100.</p>
                     <button class="game__button" onclick="guessNumber();">Играть!</button>
                 </div>
@@ -108,7 +109,7 @@
                 <div class="game__info">
                     <h3 class="game__title">Переверни текст</h3>
                     <p class="game__text">Попробуй ввести текст, который<br> будет перевернут.</p>
-                    <button class="game__button">Играть!</button>
+                    <button class="game__button" onclick="reverseText()">Играть!</button>
                 </div>
                 <img class="game__img" src="img/game_3.png" alt="Переверни текст">
             </article>
@@ -116,7 +117,7 @@
                 <div class="game__info">
                     <h3 class="game__title">Викторина</h3>
                     <p class="game__text">Отвечай на вопросы викторины<br> с вариантами ответов.</p>
-                    <button class="game__button">Играть!</button>
+                    <button class="game__button" onclick="simpleQuiz()">Играть!</button>
                 </div>
                 <img class="game__img" src="img/game_4.png" alt="Викторина">
             </article>
