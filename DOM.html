@@ -38,6 +38,7 @@
         <button id="change-color">Изменить цвет</button>
         <button id="change-text">Изменить текст заголовка</button>
         <button id="new-element">Новый элемент</button>
+        <button id="delete-item">Удалить элемент</button>
         <script>
             //Задание 1
             const removeTitleBtn = document.querySelector('#remove-title');
@@ -76,7 +77,8 @@
 
         // Задание 5
         const paragraphElClass = document.querySelectorAll('.description');
-        console.log(descriptionEl);
+        const articleElClass = document.querySelector('.article');
+     
         paragraphElClass.forEach(element => {
             console.log(element);
             element.innerText = "Новый текст";
@@ -85,20 +87,20 @@
         //Задание 6
         const newElementBtn = document.querySelector('#new-element');
         const bodyEl = document.querySelector('body');
-
         newElementBtn.addEventListener('click', function () {
             const newParagraph = document.createElement('p');
             newParagraph.textContent = 'Новый абзац';
             bodyEl.appendChild(newParagraph);
         });
 
-
-
-
-
-        
-        
-
+        //Задание 7
+        const deleteItemBtn = document.querySelector('#delete-item');
+        deleteItemBtn.addEventListener('click', function () {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
         </script>
     </body>
 </html>
