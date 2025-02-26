@@ -62,6 +62,33 @@ a {
   display: none;
 }
 
+.animated_bar {
+  background-color: #BCEC30;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.animated_bar__text {
+  font-size: 30px;
+  font-weight: 700px;
+  animation: scrollText 20s linear infinite;
+  display: inline-block;
+}
+.animated_bar__img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin-right: 51px;
+  margin-left: 51px;
+}
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .mini-games {
   background-color: #202027;
   background-image: url("img/Star_1.png"), url("img/Star_11.png"), url("img/Star_12.png");
@@ -248,6 +275,13 @@ a {
   .header__button-mob:hover {
     background-color: #FFFFFF;
     color: #202027;
+  }
+  .animated_bar__text {
+    font-size: 16px;
+  }
+  .animated_bar__img {
+    width: 19px;
+    height: 19px;
   }
   .mini-games {
     display: none;
