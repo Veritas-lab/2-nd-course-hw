@@ -8,20 +8,29 @@
 <body>
     <h1 id="title">Hello, world</h1>
     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    <button id="change-text">Change Text</button>
+    <button id="remove-title">Убрать заголовок</button>
+    <button id="change-color">Изменить цвет</button>
     <script>
         //Задание 1
-        const descriptionEl = document.querySelector('.description');
-        const changeTextBtn = document.querySelector('#change-text');
+        const removeTitleBtn = document.querySelector('#remove-title');
         const titleEl = document.querySelector('#title');
 
-        changeTextBtn.addEventListener('click', function () {
+        removeTitleBtn.addEventListener('click', function () {
             if (titleEl.style.display === 'none') {
                 titleEl.style.display = 'block';
         } else {
             titleEl.style.display = 'none';
         }
     });
+
+    //Задание 2
+    const descriptionEl = document.querySelector('.description');
+    const changeColorBtn = document.querySelector('#change-color');
+
+    changeColorBtn.addEventListener('click', function () {
+        descriptionEl.style.color = 'blue';
+    });
+
     </script>
 </body>
 </html>
