@@ -282,6 +282,7 @@ a {
   }
   .animated_bar__text {
     font-size: 16px;
+    height: 52px;
   }
   .animated_bar__img {
     width: 19px;
