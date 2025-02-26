@@ -66,10 +66,14 @@ a {
   background-color: #BCEC30;
   overflow: hidden;
   white-space: nowrap;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .animated_bar__text {
   font-size: 30px;
-  font-weight: 700px;
+  font-weight: 700;
   animation: scrollText 20s linear infinite;
   display: inline-block;
 }
