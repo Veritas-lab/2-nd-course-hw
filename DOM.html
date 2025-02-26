@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello, world</h1>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <button id="change-text">Change Text</button>
+    <script>
+        //Задание 1
+        const descriptionEl = document.querySelector('.description');
+        const changeTextBtn = document.querySelector('#change-text');
+        const titleEl = document.querySelector('#title');
+
+        changeTextBtn.addEventListener('click', function () {
+            if (titleEl.style.display === 'none') {
+                titleEl.style.display = 'block';
+        } else {
+            titleEl.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html>
