@@ -189,6 +189,7 @@ a {
 
 .play {
     background-color: #202027;
+    transition: background-color 1 ease;
     padding-top: 46px;
     background-image: url('img/Star_6.png'), url('img/Star_7.png'), url('img/Star_8.png'), url('img/Star_10.png');
     background-repeat: no-repeat;
