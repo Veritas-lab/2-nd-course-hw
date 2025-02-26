@@ -27,6 +27,9 @@
         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Natus non dicta, eius vel pariatur soluta quam at impedit ea id voluptates iusto fugiat alias maxime explicabo, voluptatibus nam! 
             Dolorum, ab.</p>
+        <p class="article">Lorem ipsum dolor sit amet.</p>
+        <p class="article">Lorem, ipsum dolor.</p>
+        <p class="article">Lorem ipsum dolor sit amet consectetur.</p>
         <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque laborum ab dicta!</p>
         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente.</p>
@@ -66,9 +69,19 @@
         const descriptionElClass = document.querySelectorAll('.description');
         console.log(descriptionEl);
         descriptionElClass.forEach(element => {
-            console.log(element);
             element.textContent = "Измененный текст";
         });
+
+        // Задание 5
+        const paragraphElClass = document.querySelectorAll('.description');
+        console.log(descriptionEl);
+        paragraphElClass.forEach(element => {
+            console.log(element);
+            element.textContent = "Новый текст";
+        });
+
+        //Задание 6
+
 
 
 
