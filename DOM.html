@@ -37,6 +37,7 @@
         <button id="remove-title">Убрать/Показать заголовок</button>
         <button id="change-color">Изменить цвет</button>
         <button id="change-text">Изменить текст заголовка</button>
+        <button id="new-element">Новый элемент</button>
         <script>
             //Задание 1
             const removeTitleBtn = document.querySelector('#remove-title');
@@ -69,6 +70,7 @@
         const descriptionElClass = document.querySelectorAll('.description');
         console.log(descriptionEl);
         descriptionElClass.forEach(element => {
+            console.log(element);
             element.textContent = "Измененный текст";
         });
 
@@ -77,10 +79,19 @@
         console.log(descriptionEl);
         paragraphElClass.forEach(element => {
             console.log(element);
-            element.textContent = "Новый текст";
+            element.innerText = "Новый текст";
         });
 
         //Задание 6
+        const newElementBtn = document.querySelector('#new-element');
+        const bodyEl = document.querySelector('body');
+
+        newElementBtn.addEventListener('click', function () {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            bodyEl.appendChild(newParagraph);
+        });
+
 
 
 
