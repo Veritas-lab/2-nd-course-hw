@@ -189,6 +189,7 @@ a {
 
 .play {
     background-color: #202027;
+    transition: background-color 0.5s ease;
     padding-top: 46px;
     background-image: url('img/Star_6.png'), url('img/Star_7.png'), url('img/Star_8.png'), url('img/Star_10.png');
     background-repeat: no-repeat;
@@ -330,15 +331,21 @@ a {
         }
     }
 
-    .animated_bar__text {
+    .animated_bar {
+        height: 50px;
+ 
+
+    &__text {
         font-size: 16px;
-        height: 52px;
     }
 
-    .animated_bar__img {
+    &__img {
         width: 19px;
         height: 19px;
+        margin-right: 27px;
+        margin-left: 27px;
     }
+}
 
     .mini-games {
         display: none;
@@ -423,3 +430,172 @@ a {
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top {
+        height: 600px;
+        background-position:
+            top 0px right 0px,
+            top 94px left 63px,
+            top 69px left 156px,
+            top 568px left 50%,
+            top 538px left 45%;
+    }
+
+    .header {
+        padding-top: 100px;
+
+        &__title {
+            font-size: 48px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__button {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+
+    .animated_bar {
+        height: 70px;
+
+        &__text {
+            font-size: 24px;
+        }
+
+        &__img {
+            width: 28px;
+            height: 28px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+    }
+
+    .mini-games {
+        height: auto;
+        padding-bottom: 32px;
+    }
+
+    .about {
+        padding-top: 64px;
+
+        &__title {
+            font-size: 48px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px; 
+        padding: 16px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 0;
+
+        &__img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        &__info {
+            padding: 16px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__number {
+            width: 96px; 
+            height: 32px; 
+            font-size: 14px; 
+            padding: 6px 12px 8px 12px;
+        }
+    }
+
+    .games a:nth-child(5) {
+        margin-top: 0;
+    }
+    
+    .play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 32px;
+
+        &__title {
+            font-size: 48px;
+        }
+    }
+
+    .play-games {
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+
+    .game {
+        width: 90%; 
+        height: auto; 
+        flex-direction: column; 
+        margin-bottom: 24px; 
+
+        &:nth-child(odd),
+        &:nth-child(even) {
+            flex-direction: column; 
+        }
+
+        &__info {
+            margin: 24px; 
+            text-align: center; 
+            order: 2; 
+        }
+
+        &__title {
+            font-size: 36px; 
+        }
+
+        &__text {
+            font-size: 18px; 
+            margin-top: 16px; 
+        }
+
+        &__button {
+            margin-top: 24px; 
+        }
+
+        &__img {
+            max-width: 100%; 
+            height: auto; 
+            order: 1;
+        }
+    }
+
+    .footer {
+        height: auto; 
+
+        &__title {
+            font-size: 20px; 
+            padding-top: 30px; 
+            padding-bottom: 30px; 
+        }
+    }
+}
+
+
+
