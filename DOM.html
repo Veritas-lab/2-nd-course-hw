@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title {
+            color: red;
+        }
+
+        p.description {
+            font-size: 20px;
+        }
+
+        button {
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+    <body>
+        <h1 id="title">Hello, world</h1>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, est?</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Natus non dicta, eius vel pariatur soluta quam at impedit ea id voluptates iusto fugiat alias maxime explicabo, voluptatibus nam! 
+            Dolorum, ab.</p>
+        <p class="article">Lorem ipsum dolor sit amet.</p>
+        <p class="article">Lorem, ipsum dolor.</p>
+        <p class="article">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque laborum ab dicta!</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente.</p>
+        <p class="description">Lorem, ipsum.</p>
+        <button id="remove-title">Убрать/Показать заголовок</button>
+        <button id="change-color">Изменить цвет</button>
+        <button id="change-text">Изменить текст заголовка</button>
+        <button id="new-element">Новый элемент</button>
+        <button id="delete-item">Удалить элемент</button>
+        <script>
+            //Задание 1
+            const removeTitleBtn = document.querySelector('#remove-title');
+            const titleEl = document.querySelector('#title');
+
+                removeTitleBtn.addEventListener('click', function () {
+            if (titleEl.style.display === 'none') {
+                titleEl.style.display = 'block';
+            } else {
+                titleEl.style.display = 'none';
+            }
+        });
+
+        //Задание 2
+        const descriptionEl = document.querySelector('.description');
+        const changeColorBtn = document.querySelector('#change-color');
+
+        changeColorBtn.addEventListener('click', function () {
+            descriptionEl.style.color = 'blue';
+        });
+
+        // Задание 3
+        const changeTextBtn = document.querySelector('#change-text');
+
+        changeTextBtn.addEventListener('click', function () {
+            titleEl.textContent = 'Привет, мир!';
+        });
+
+        // Задание 4
+        const descriptionElClass = document.querySelectorAll('.description');
+        console.log(descriptionEl);
+        descriptionElClass.forEach(element => {
+            console.log(element);
+            element.textContent = "Измененный текст";
+        });
+
+        // Задание 5
+        const paragraphElClass = document.querySelectorAll('.description');
+        const articleElClass = document.querySelector('.article');
+     
+        paragraphElClass.forEach(element => {
+            console.log(element);
+            element.innerText = "Новый текст";
+        });
+
+        //Задание 6
+        const newElementBtn = document.querySelector('#new-element');
+        const bodyEl = document.querySelector('body');
+        newElementBtn.addEventListener('click', function () {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            bodyEl.appendChild(newParagraph);
+        });
+
+        //Задание 7
+        const deleteItemBtn = document.querySelector('#delete-item');
+        deleteItemBtn.addEventListener('click', function () {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+        </script>
+    </body>
+</html>
